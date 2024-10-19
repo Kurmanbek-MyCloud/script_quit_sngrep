@@ -1,11 +1,11 @@
 [Unit]
-Description=Мониторинг процессов sngrep и их завершение через 10 минут
+Description=Мониторинг процессов sngrep и их завершение через 5 минут
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 root/script_quit_sngrep/main.py
+ExecStart=/usr/bin/python3 /root/script_quit_sngrep/main.py
 Restart=always
-User=имя_пользователя
+User=root
 
 [Install]
 WantedBy=multi-user.target
