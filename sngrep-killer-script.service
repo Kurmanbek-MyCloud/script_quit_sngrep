@@ -3,7 +3,7 @@ Description=Мониторинг процессов sngrep и их заверш�
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/python3 /путь/к/вашему/скрипту/monitor_sngrep.py
+ExecStart=/usr/bin/python3 root/script_quit_sngrep/main.py
 Restart=always
 User=имя_пользователя
 
