@@ -1,0 +1,11 @@
+[Unit]
+Description=Мониторинг процессов sngrep и их завершение через 10 минут
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /путь/к/вашему/скрипту/monitor_sngrep.py
+Restart=always
+User=имя_пользователя
+
+[Install]
+WantedBy=multi-user.target
